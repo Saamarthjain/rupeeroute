@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RupeeRoute</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: black;
+      font-family: Inter, system-ui, sans-serif;
+    }
+  </style>
+</head>
+
+<body class="bg-black text-white">
+
+  <!-- HERO -->
+  <section class="relative overflow-hidden border-b border-white/10">
+    <div class="absolute inset-0 bg-gradient-to-br from-green-500/10 via-transparent to-blue-500/10"></div>
+
+    <div class="relative max-w-7xl mx-auto px-6 py-24 lg:py-32">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+        <!-- LEFT -->
+        <div>
+
+          <!-- NAV -->
+          <div class="flex items-center justify-between mb-8 flex-wrap gap-4">
+
+            <!-- LOGO -->
+            <div class="flex items-center gap-4 rounded-full border border-white/10 bg-white/5 px-5 py-3">
+
+              <img src="./assets/logo.svg" class="w-44 h-auto" />
+
+            </div>
+
+            <div class="flex items-center gap-6 text-sm text-white/60">
+              <a href="#features" class="hover:text-white transition">Features</a>
+              <a href="#contact" class="hover:text-white transition">Contact</a>
+            </div>
+          </div>
+
+          <!-- HEADING -->
+          <h1 class="text-5xl lg:text-7xl font-bold leading-tight tracking-tight">
+            Smarter Global
+            <span class="block text-green-400">
+              Capital Routing
+            </span>
+          </h1>
+
+          <p class="mt-8 text-lg text-white/70 leading-8 max-w-xl">
+            RupeeRoute helps Indian investors optimize international remittances with real-time FX auditing, tax-aware routing, and intelligent capital efficiency infrastructure.
+          </p>
+
+          <!-- BUTTONS -->
+          <div class="mt-10 flex flex-wrap gap-4">
+
+            <button class="px-8 py-4 rounded-2xl bg-green-400 text-black font-semibold hover:scale-105 transition-transform">
+              Request Demo
+            </button>
+
+            <button class="px-8 py-4 rounded-2xl border border-white/20 bg-white/5 hover:bg-white/10 transition">
+              Download Investor Deck
+            </button>
+
+          </div>
+
+          <!-- STATS -->
+          <div class="mt-12 grid grid-cols-3 gap-6 max-w-lg">
+
+            <div>
+              <div class="text-3xl font-bold">$2.2B+</div>
+              <div class="text-white/60 text-sm mt-1">
+                FY26 Overseas Flows
+              </div>
+            </div>
+
+            <div>
+              <div class="text-3xl font-bold">65.5%</div>
+              <div class="text-white/60 text-sm mt-1">
+                MoM Growth
+              </div>
+            </div>
+
+            <div>
+              <div class="text-3xl font-bold">20%</div>
+              <div class="text-white/60 text-sm mt-1">
+                TCS Avoidance Engine
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- RIGHT -->
+        <div>
+
+          <div class="rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl p-8 shadow-2xl">
+
+            <div class="flex items-center justify-between mb-8">
+
+              <div>
+                <div class="text-sm text-white/50">
+                  Live FX Routing
+                </div>
+
+                <div class="text-2xl font-bold mt-1">
+                  USD → INR
+                </div>
+              </div>
+
+              <div class="text-green-400 text-sm font-medium">
+                Live Market
+              </div>
+
+            </div>
+
+            <div class="space-y-6">
+
+              <div class="rounded-2xl bg-black/40 p-5 border border-white/5">
+
+                <div class="flex justify-between text-sm text-white/60 mb-2">
+                  <span>Interbank Rate</span>
+                  <span>₹83.05</span>
+                </div>
+
+                <div class="w-full bg-white/10 rounded-full h-2">
+                  <div class="bg-green-400 h-2 rounded-full w-[82%]"></div>
+                </div>
+
+              </div>
+
+              <div class="rounded-2xl bg-black/40 p-5 border border-white/5">
+
+                <div class="flex justify-between text-sm text-white/60 mb-2">
+                  <span>Traditional Bank Rate</span>
+                  <span>₹85.10</span>
+                </div>
+
+                <div class="w-full bg-white/10 rounded-full h-2">
+                  <div class="bg-red-400 h-2 rounded-full w-[95%]"></div>
+                </div>
+
+              </div>
+
+              <div class="rounded-2xl bg-green-400/10 border border-green-400/20 p-6">
+
+                <div class="text-sm text-green-300 mb-2">
+                  Estimated Savings
+                </div>
+
+                <div class="text-4xl font-bold text-green-400">
+                  ₹18,430
+                </div>
+
+                <div class="text-white/60 mt-2 text-sm">
+                  On a ₹10L annual international allocation
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section id="features" class="max-w-7xl mx-auto px-6 py-24">
+
+    <div class="max-w-3xl mb-16">
+      <div class="text-green-400 font-medium mb-4">
+        Platform Infrastructure
+      </div>
+
+      <h2 class="text-4xl lg:text-5xl font-bold leading-tight">
+        Built for the next generation of Indian global investors.
+      </h2>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+      <div class="rounded-3xl border border-white/10 bg-white/5 p-8">
+        <h3 class="text-2xl font-semibold mb-4">
+          Live FX Auditing
+        </h3>
+
+        <p class="text-white/60 leading-7">
+          Benchmark broker rates against institutional interbank pricing in real-time.
+        </p>
+      </div>
+
+      <div class="rounded-3xl border border-white/10 bg-white/5 p-8">
+        <h3 class="text-2xl font-semibold mb-4">
+          GST Simulation
+        </h3>
+
+        <p class="text-white/60 leading-7">
+          Sequential Rule 32 tax engine calculates true conversion drag.
+        </p>
+      </div>
+
+      <div class="rounded-3xl border border-white/10 bg-white/5 p-8">
+        <h3 class="text-2xl font-semibold mb-4">
+          LRS Tracking
+        </h3>
+
+        <p class="text-white/60 leading-7">
+          Monitor cumulative remittances and avoid surprise TCS debits.
+        </p>
+      </div>
+
+      <div class="rounded-3xl border border-white/10 bg-white/5 p-8">
+        <h3 class="text-2xl font-semibold mb-4">
+          Smart Routing
+        </h3>
+
+        <p class="text-white/60 leading-7">
+          Optimize transfer timing and batching for maximum efficiency.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="border-t border-white/10 bg-white/[0.02]">
+
+    <div class="max-w-5xl mx-auto px-6 py-24 text-center">
+
+      <div class="text-green-400 font-medium mb-4">
+        Contact Us
+      </div>
+
+      <h2 class="text-4xl lg:text-5xl font-bold leading-tight">
+        Let’s build the future of global investing infrastructure.
+      </h2>
+
+      <div class="mt-12">
+
+        <a
+          href="https://www.linkedin.com/company/rupeeroutein/"
+          target="_blank"
+          class="inline-block rounded-3xl border border-white/10 bg-white/5 px-10 py-8 hover:bg-white/10 transition"
+        >
+
+          <div class="text-white/50 text-sm mb-2">
+            LinkedIn
+          </div>
+
+          <div class="text-xl font-semibold">
+            linkedin.com/company/rupeeroutein
+          </div>
+
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
